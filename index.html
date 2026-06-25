@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Web - Alura 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#home">Alura</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>Desenvolvedor Web Criativo e Apaixonado por Tecnologia</p>
+            <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. 
+                       Com expertise em HTML, CSS e JavaScript, trabalho para trazer ideias à vida através do código.</p>
+                    <p>Minha missão é desenvolver aplicações web modernas, responsivas e com excelente experiência do usuário.</p>
+                </div>
+                <div class="sobre-skills">
+                    <h3>Habilidades</h3>
+                    <div class="skill-bar">
+                        <span>HTML</span>
+                        <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>CSS</span>
+                        <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>JavaScript</span>
+                        <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Responsive Design</span>
+                        <div class="progress"><div class="progress-bar" style="width: 92%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">🎨</div>
+                    <h3>Design Web</h3>
+                    <p>Criação de designs modernos e atraentes para sua presença online.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">💻</div>
+                    <h3>Desenvolvimento</h3>
+                    <p>Desenvolvimento de websites responsivos e otimizados para todas as plataformas.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">📱</div>
+                    <h3>Mobile First</h3>
+                    <p>Aplicações otimizadas para dispositivos móveis com performance superior.</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">⚡</div>
+                    <h3>Otimização</h3>
+                    <p>Otimização de performance e SEO para melhor classificação nos buscadores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Projeto+1" alt="Projeto 1">
+                        <div class="overlay">
+                            <a href="#" class="btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <h3>Projeto 1</h3>
+                    <p>Website corporativo moderno</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Projeto+2" alt="Projeto 2">
+                        <div class="overlay">
+                            <a href="#" class="btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <h3>Projeto 2</h3>
+                    <p>E-commerce com checkout</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x200?text=Projeto+3" alt="Projeto 3">
+                        <div class="overlay">
+                            <a href="#" class="btn-small">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <h3>Projeto 3</h3>
+                    <p>Aplicativo de gerenciamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form class="formulario" id="contatoForm">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alura. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">GitHub</a>
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
